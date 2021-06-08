@@ -880,7 +880,7 @@ library SafeBEP20 {
 }
 
 // SnowToken with Governance.
-contract SnowToken is BEP20('Snow Token BETA', 'SNOW BETA') {
+contract SnowToken is BEP20('Snow Token', 'SNOW') {
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (SantaClaus).
     function mint(address _to, uint256 _amount) public onlyOwner {
         _mint(_to, _amount);
@@ -1200,7 +1200,7 @@ contract MasterChef is Ownable {
     // Add a new lp to the pool. Can only be called by the owner.
     // XXX DO NOT add the same LP token more than once. Rewards will be messed up if you do.
     function add(uint256 _allocPoint, IBEP20 _lpToken, uint16 _depositFeeBP, bool _withUpdate) public onlyOwner {
-        require(_depositFeeBP <= 10000, "add: invalid deposit fee basis points");
+        require(_depositFeeBP <= 500, "add: invalid deposit fee basis points");
         if (_withUpdate) {
             massUpdatePools();
         }
@@ -1217,7 +1217,7 @@ contract MasterChef is Ownable {
 
     // Update the given pool's SNOW allocation point and deposit fee. Can only be called by the owner.
     function set(uint256 _pid, uint256 _allocPoint, uint16 _depositFeeBP, bool _withUpdate) public onlyOwner {
-        require(_depositFeeBP <= 10000, "set: invalid deposit fee basis points");
+        require(_depositFeeBP <= 500, "set: invalid deposit fee basis points");
         if (_withUpdate) {
             massUpdatePools();
         }
