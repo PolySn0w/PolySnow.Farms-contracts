@@ -1,1 +1,21 @@
 # PolySnow.Farms-contracts
+
+
+
+## Deployed Contracts
+
+SnowToken: 0xc831BfFC3aEC7587F4bda1CD652aa4Ca91BD61e1
+
+SantaClaus(MasterChef): 0xade2258698670c5933bbC6E99512AFD6eD398491
+
+Timelock: 0x889D69aCfe1A76a004f3102fDF85e00038295dCF
+
+Multicall: 0xA0011d861607025872d1a06193664502F4FFeb21
+
+
+
+## Additional
+
+Dev Address: 0x4bB0cbA3E78d4272bf042a20537E3Fe0Df79683c
+
+Fee Address: 0x102b5a7a344F9faA36D6Ed4B58C58e4892A621C0
